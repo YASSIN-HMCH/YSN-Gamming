@@ -1,0 +1,88 @@
+/* General footer styling */
+.general-footer {
+    background-color: #db7210;
+    padding: 50px 100px;
+    font-family: 'Play', sans-serif;
+  }
+  
+  /* Footer container */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
+  .foo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px 0;
+    width:100%;
+  }
+  .foo1{
+    text-align: center;
+    width: 40%;
+    margin: 20px;
+  }
+  .foo1 h5{
+    color: #353535;
+  }
+  /* Social media icons styling */
+  .social-icons a {
+    font-size: 2em;
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #353535;
+  }
+  
+  /* Copyright and credits */
+  .copyright {
+    font-size: 1.1em;
+    text-align: center;
+    color: black;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .copyright   {
+      margin-top: 20px;
+      text-align: center;
+      color: black;
+    }
+    .foo {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center align items */
+  }
+
+  .foo1 {
+      width: 100%; /* Make each section wider on smaller screens */
+      margin: 10px 0; /* Reduce margin */
+  }
+    
+    .social-icons {
+      margin-bottom: 20px;
+    }
+  }
+ @media (max-width: 480px) {
+    .foo {
+        padding: 10px 5%; /* Reduce padding on very small screens */
+    }
+
+    .foo1 {
+        width: 100%; /* Full width on very small screens */
+    }
+}
+  
